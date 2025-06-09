@@ -31,15 +31,17 @@ baseline_code_pro.py 訓練程式
 correlations.py      產生train data相關性矩陣(熱力圖)程式
 tabular_data_pro.py  取特徵程式
 test_code_pro.py     測試程式
-train_data.py        資料合併程式
+train_data.py        train資料合併程式(方便給correlations.py用的)
+```
 
 ---------------------------------------------------------------
-
+```
 執行順序：tabular_data_pro.py -> train_data.py -> correlations.py -> baseline_code_pro.py -> test_code_pro.py
+```
 train_data.py與correlations.py可以不用執行，只是單純查看特徵的關聯性，進而去修改訓練程式中的特徵提取。
 執行完成後的資料夾結構，其中prediction_results_test_hierarchical_mode.csv為預測好的檔案，並可以直接上傳至ai cup競賽。
 
-
+```
 project/
 ├── 39_Test_Dataset/
 │   ├── test_data/
